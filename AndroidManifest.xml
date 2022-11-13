@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="5"
+    android:versionName="1.1"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10"
+    package="com.my.clec"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="10">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="29" />
+
+    <application
+        android:theme="@ref/0x7f100005"
+        android:label="@ref/0x7f0f001b"
+        android:icon="@ref/0x7f0d0000"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:roundIcon="@ref/0x7f0d0002"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <activity
+            android:name="com.my.clec.ShowText" />
+
+        <activity
+            android:name="com.my.clec.WhatToDo"
+            android:screenOrientation="1"
+            android:configChanges="0x80"
+            android:windowSoftInputMode="0x10"
+            android:resizeableActivity="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.my.clec.Disclaimer" />
+
+        <meta-data
+            android:name="com.android.dynamic.apk.fused.modules"
+            android:value="base" />
+
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:value="@ref/0x7f120000" />
+    </application>
+</manifest>
